@@ -1,0 +1,161 @@
+ *{
+     margin: 0;
+     padding: 0;
+ }
+ img{
+     border:0;
+ }
+ ol, ul ,li{list-style: none;}
+ html, body {
+    width: 100%;
+    height: 100%;
+ }
+ a {
+    text-decoration: none;
+ }
+ /*===== 主体部分开始 ========*/
+.main {
+    padding-left: 180px;
+    width: 100%;
+    height: 100%;
+}
+.main.screen{
+    padding-left: 0;
+}
+.main .top-nav {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color:#3c8dbc;
+    margin-bottom: 20px;
+}
+/* .main .top-nav a {
+    display: inline-block;
+} */
+.main .top-nav .toggleMenu {
+    float: left;
+    color: #fff;
+    margin-left: 15px;
+    width: 20px;
+}
+.main .top-nav .log-out {
+    float: right;
+    color: #fff;
+    margin-right: 15px;
+}
+.main .top-nav .log-out .modal-body {
+    color: red;
+}
+/* ============管理系统---===== */
+.main .system {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+.main .system a:first-child{
+    /* color: #337ab7; */
+    margin-right: 10px;
+}
+.main .system a:last-child {
+    color: #777;
+    margin-left: 5px;
+}
+/* 内容部分 */
+.content {
+    width: 100%;
+    margin: 20px 15px 0 15px;
+    text-align: center;
+}
+
+/* 柱状图 */
+.content #bar-chart{
+    float: left;
+    width: 50%
+    height: 400px;
+}
+/* 饼状图 */
+.content #round-chart {
+    float: right;
+    width: 50%;
+    height: 400px;
+}
+ /*===== 主体部分结束 ========*/
+
+ /* ======侧边栏部分开始======== */
+ body {
+    position: relative;
+ }
+ .side-bar {
+    position: absolute;
+    width: 180px;
+    height: 100%;
+    background-color: #222d32;
+    left: 0;
+    top: 0;
+ }
+ .side-bar .brand {
+    width: 100%;
+    height: 50px;
+    background-color: #337ab7;
+ }
+ .side-bar .brand a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+ }
+ /* 用户信息 */
+ .side-bar .user {
+    padding: 30px 20px;
+    width: 180px;
+    height: 110px;
+    font-size: 12px;
+    color: #fff;
+ }
+ .side-bar .user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+ }
+ .side-bar .menu li a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #aaa;
+    border: 3px solid transparent;
+    padding-left: 30px;
+}
+/* ===========菜单 -=======*/
+.menu {
+    width: 100%;
+    margin-top: 3px;
+}
+.menu li>a {
+    line-height: 40px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.menu li i{
+    padding-right: 5px;
+}
+.menu li .son {
+    display: none;
+}
+.menu li .son a{
+    text-decoration: none;
+    display: block;
+    height: 30px;
+    padding-left: 50px;
+    font-size: 12px;
+    color: #aaa;
+    line-height: 30px;
+}
+
+/* ======侧边栏内容结束-================= */

@@ -66,12 +66,3 @@ pieOption = {
 };
 myChartPie.setOption(pieOption);
 
-// ====顶部导航中的显示隐藏功能===
-$('.toggleMenu').on('click', function () {
-    $('.side-bar').toggle()
-    $('.main').toggleClass('screen')
-})
-//==== 分类管理功能====
-$('.menu').on('click','a', function (){
-     $(this).siblings().slideToggle();
-})

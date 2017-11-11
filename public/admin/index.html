@@ -10,7 +10,7 @@
     <!-- 引入进度条样式文件 -->
     <link rel="stylesheet" type="text/css" href="assets/nprogress/nprogress.css">
     <!-- 引入当前页面的css文件 -->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/admin.css">
 </head>
 <body>
     <!-- 侧边栏内容开始-=========== -->
@@ -26,15 +26,15 @@
         </div>
         <!-- menu菜单 -->
         <ul class="menu">
-             <li><a href="javascript:;"><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
+             <li><a href="./users.html"><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
              <li>
                 <a href="javascript:;"><i class="glyphicon glyphicon-th-list"></i>分类管理</a>
                 <section class="son">
-                    <a href="javascript:;">一级分类</a>
-                    <a href="javascript:;">二级分类</a>
+                    <a href="./categoryFirst.html">一级分类</a>
+                    <a href="./categorySecond.html">二级分类</a>
                 </section>
              </li>
-             <li><a href="javascript:;"><i class="glyphicon glyphicon-tags"></i>商品管理</a></li>
+             <li><a href="./products.html"><i class="glyphicon glyphicon-tags"></i>商品管理</a></li>
         </ul>
     </aside>
     <!-- 侧边栏内容结束-=========== -->
@@ -50,7 +50,8 @@
             <!-- 退出登录 -->
 
             <a class="log-out" data-toggle="modal" data-target=".bs-example-modal-sm" href="javascript:;"><i class="glyphicon glyphicon-log-out"></i></a>
-            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+
+            <div id="logout_model" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
                 <div class="modal-dialog modal-sm" role="document">
                     <div class="modal-content">
                     <div class="modal-header">
@@ -93,5 +94,6 @@
     <script src="assets/nprogress/nprogress.js"></script>
     <!-- 引入本页面的js文件 -->
     <script src="js/index.js"></script>
+    <script src="js/admin.js"></script>
 </body>
-</html>
+</htm-==

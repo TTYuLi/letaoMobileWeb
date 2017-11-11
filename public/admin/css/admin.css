@@ -1,4 +1,4 @@
- *{
+*{
      margin: 0;
      padding: 0;
  }
@@ -13,7 +13,23 @@
  a {
     text-decoration: none;
  }
- /*===== 主体部分开始 ========*/
+ // 登陆页背景样式
+// .login_bg{
+//     width: 100%;
+//     height: 100%;
+//     background-color:#222d32;
+//  }
+.mt_150 {
+    margin-top: 150px;
+}
+.mr_50 {
+    margin-right: 50px;
+}
+.mb_15 {
+    margin-bottom: 15px;
+}
+
+/*===== 主体部分开始 ========*/
 .main {
     padding-left: 180px;
     width: 100%;
@@ -29,9 +45,6 @@
     background-color:#3c8dbc;
     margin-bottom: 20px;
 }
-/* .main .top-nav a {
-    display: inline-block;
-} */
 .main .top-nav .toggleMenu {
     float: left;
     color: #fff;
@@ -59,7 +72,7 @@
     /* color: #337ab7; */
     margin-right: 10px;
 }
-.main .system a:last-child {
+.main .system a+a {
     color: #777;
     margin-left: 5px;
 }
@@ -73,7 +86,7 @@
 /* 柱状图 */
 .content #bar-chart{
     float: left;
-    width: 50%
+    width: 50%;
     height: 400px;
 }
 /* 饼状图 */
@@ -85,9 +98,9 @@
  /*===== 主体部分结束 ========*/
 
  /* ======侧边栏部分开始======== */
- body {
-    position: relative;
- }
+ // body {
+ //    position: relative;
+ // }
  .side-bar {
     position: absolute;
     width: 180px;
@@ -146,7 +159,7 @@
     padding-right: 5px;
 }
 .menu li .son {
-    display: none;
+    // display: none;
 }
 .menu li .son a{
     text-decoration: none;

@@ -78,7 +78,7 @@
             <a href="javascript">分类管理</a>/
             <a href="javascript">一级分类</a>
           </section>
-            <button class="btn btn-default" data-toggle="modal" data-targrt="#addCategory">添加分类</button>
+            <button class="btn btn-default" data-toggle="modal" data-target="#addCategory">添加分类</button>
             <table class="table table-hover table-bordered">
               <thead>
                 <tr>
@@ -104,17 +104,19 @@
         <div id="addCategory" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
           <div class="modal-dialog modal-sm" role="document">
               <div class="modal-content">
+                <form id="firstForm">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                   <h4 class="modal-title">温馨提示</h4>
                 </div>
-                <div class="modal-body" style="color:darkred">
-                  <i class="glyphicon glyphicon-info-sign"></i> 您确定要退出后台管理系统吗？
+                <div class="modal-body" >
+                   <input type="text" name="categoryName" id="categoryName" placeholder="输入一级分类" class="form-control" >
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                  <a href="./login.html" type="button" class="btn btn-primary">确定</a>
+                  <button type="button" id="save" class="btn btn-primary">确定</button>
                 </div>
+                </form>
               </div>
           </div>
         </div>
@@ -122,7 +124,7 @@
 
     </main>
     <!-- 主体内容结束================= -->
-    <script type="text/template" id="SecondCate">
+    <script type="text/template" id="firstCate">
       <%for (var i = 0; i < rows.length; i++) {%>
         <tr>
           <td><%=(page-1)*size+i+1%></td>
@@ -135,7 +137,7 @@
     <!-- 引入bootstrap插件 -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <!-- 引入表单验证插件 -->
-    <script src="assets/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+    <script src="assets/bootstrap-validator/js/bootstrapValidator.js"></script>
     <!-- 插入分页插件 -->
     <script src="assets/bootstrap-paginator/bootstrap-paginator.min.js"></script>
     <!-- 引入模板arttemplate插件 -->
@@ -146,4 +148,4 @@
     <script src="js/categoryFirst.js"></script>
     <script src="js/admin.js"></script>
 </body>
-</htm-==
+</html>

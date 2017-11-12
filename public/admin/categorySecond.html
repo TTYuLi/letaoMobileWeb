@@ -49,7 +49,7 @@
             </a>
             <!-- 退出登录 -->
 
-            <a class="log-out" data-toggle="modal" data-target=".bs-example-modal-sm" href="javascript:;"><i class="glyphicon glyphicon-log-out"></i></a>
+            <a class="log-out" data-toggle="modal" href="#logout_model"><i class="glyphicon glyphicon-log-out"></i></a>
 
             <div id="logout_model" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
                 <div class="modal-dialog modal-sm" role="document">
@@ -69,31 +69,71 @@
                 </div>
             </div>
         </div>
-        <!-- 管理系统 -->
-        <section class="system">
+
+        <!-- 内容模块 -->
+        <div class="content container-fluid">
+            <!-- 管理系统 -->
+          <section class="system">
             <a href="javascript">管理系统</a>/
             <a href="javascript">分类管理</a>/
             <a href="javascript">二级分类</a>
-        </section>
-        <!-- 内容模块 -->
-        <div class="content">
+          </section>
+          <a type="button" class="btn btn-default" data-toggle="model" data-target="#addCategory">添加分类</a>
+          <table class="table table-hover table-bordered">
+            <thead>
+              <tr>
+                <th>序号</th>
+                <th>一级分类名称</th>
+                <th>二级分类名称</th>
+                <th>二级分类LOGO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>女士馆</td>
+                <td>上装</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- 分页 -->
+          <div>
+            <ul class="pagination"></ul>
+          </div>
 
         </div>
 
     </main>
     <!-- 主体内容结束================= -->
+    <script type="text/template" id="secondRes">
+       <%for (var i = 0; i < rows.length; i++) {%>
+          <tr>
+            <td><%=(page - 1) * size +i +1%></td>
+            <td><%=1%></td>
+            <td><%=rows[i].brandName%></td>
+            <td><img src="<%=rows[i].brandLogo%>"></td>
+          </tr>
+       <%}%>
+    </script>
     <!-- 引入jquery文件 -->
     <script src="assets/jquery/jquery.min.js"></script>
     <!-- 引入bootstrap插件 -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <!-- 引入表单验证插件 -->
     <script src="assets/bootstrap-validator/js/bootstrapValidator.min.js"></script>
-    <!-- 引入echarts库 -->
-    <script src="assets/echarts/echarts.min.js"></script>
+    <!-- 引入引擎模板插件 -->
+    <script src="assets/artTemplate/template-native.js"></script>
+    <!-- 引入图片上传插件 -->
+    <script src="assets/jquery-fileupload/jquery.ui.widget.js"></script>
+    <script src="assets/jquery-fileupload/jquery.fileupload.js"></script>
+    <!-- 引入分页插件 -->
+    <script src="./assets/bootstrap-paginator/bootstrap-paginator.min.js"></script>
     <!-- 引入进度条插件 -->
     <script src="assets/nprogress/nprogress.js"></script>
     <!-- 引入本页面的js文件 -->
-    <script src="js/index.js"></script>
+    <script src="js/categorySecond.js"></script>
     <script src="js/admin.js"></script>
 </body>
 </html>

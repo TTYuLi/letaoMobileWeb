@@ -49,7 +49,7 @@
             </a>
             <!-- 退出登录 -->
 
-            <a class="log-out" data-toggle="modal" data-target=".bs-example-modal-sm" href="javascript:;"><i class="glyphicon glyphicon-log-out"></i></a>
+            <a class="log-out" data-toggle="modal" href="#logout_model"><i class="glyphicon glyphicon-log-out"></i></a>
 
             <div id="logout_model" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
                 <div class="modal-dialog modal-sm" role="document">
@@ -69,15 +69,16 @@
                 </div>
             </div>
         </div>
+
+        <!-- 内容模块 -->
+        <div class="content userContent container-fluid">
         <!-- 管理系统 -->
         <section class="system">
             <a href="javascript">管理系统</a>/
             <a href="javascript">用户管理</a>
         </section>
-        <!-- 内容模块 -->
-        <div class="content userContent">
              <!-- 用户管理表单 -->
-          <table class="table table-hover table-bordered">
+          <table class="table table-hover table-bordered text-center">
             <thead>
               <tr>
                 <th>序号</th>
@@ -100,7 +101,7 @@
 
           <!-- 分页 -->
           <div class="page">
-            <ul class="pagination"></ul>
+            <ul id="pagination"></ul>
           </div>
         </div>
     </main>
@@ -130,13 +131,15 @@
     </div>
   </div>
     <!-- 引入jquery文件 -->
-    <script src="assets/jquery/jquery.min.js"></script>
+    <script src="assets/jquery/jquery.js"></script>
     <!-- 引入bootstrap插件 -->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
     <!-- 引入表单验证插件 -->
     <script src="assets/bootstrap-validator/js/bootstrapValidator.min.js"></script>
     <!-- 引入echarts库 -->
     <script src="assets/artTemplate/template-native.js"></script>
+    <!-- 引入分页插件 -->
+    <script src="./assets/bootstrap-paginator/bootstrap-paginator.js"></script>
     <!-- 引入进度条插件 -->
     <script src="assets/nprogress/nprogress.js"></script>
     <!-- 引入本页面的js文件 -->

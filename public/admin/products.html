@@ -69,15 +69,43 @@
                 </div>
             </div>
         </div>
-        <!-- 管理系统 -->
-        <section class="system">
+
+        <!-- 内容模块 -->
+        <div class="content container-fluid">
+            <!-- 管理系统 -->
+          <section class="system">
             <a href="javascript">管理系统</a>/
             <a href="javascript">首页</a>
-        </section>
-        <!-- 内容模块 -->
-        <div class="content">
-            <div id="bar-chart" style="height:400px;width:50%"></div>
-            <div id="round-chart"></div>
+          </section>
+          <a type="button" class="btn btn-default" data-toggle="model" data-target="#addCategory">添加商品</a>
+          <table class="table table-hover table-bordered">
+            <thead>
+              <tr>
+                <th>序号</th>
+                <th>商品名称</th>
+                <th>商品描述</th>
+                <th>商品库存</th>
+                <th>商品尺寸</th>
+                <th>商品状态</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>【莹恋】MIZUNO美津浓V1GA159002乒乓球鞋男鞋女鞋室内综合训练鞋</td>
+                <td>描述</td>
+                <td>44</td>
+                <td>35-56</td>
+                <td>已上架</td>
+                <td>
+                  <button type="button" class="btn btn-danger">下架</button>
+                  <button type="button" class="btn btn-primary">编辑</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
         </div>
 
     </main>
@@ -96,4 +124,4 @@
     <script src="js/index.js"></script>
     <script src="js/admin.js"></script>
 </body>
-</htm-==
+</html>

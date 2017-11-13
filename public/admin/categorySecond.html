@@ -11,6 +11,21 @@
     <link rel="stylesheet" type="text/css" href="assets/nprogress/nprogress.css">
     <!-- 引入当前页面的css文件 -->
     <link rel="stylesheet" type="text/css" href="css/admin.css">
+    <style>
+      .fileupload {
+        position: relative;
+      }
+      .fileupload a {
+        width: 30%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .fileupload [type="file"] {
+        opacity: 0;
+        width: 30%;
+      }
+    </style>
 </head>
 <body>
     <!-- 侧边栏内容开始-=========== -->
@@ -114,23 +129,27 @@
                   <h4 class="modal-title">添加分类</h4>
                 </div>
                 <div class="modal-body">
+                  <input type="hidden" name="categoryId" id="categoryId" >
                    <!-- 下拉框 -->
                   <div class="dropdown">一级分类：
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                     游泳馆
+                    <button class="btn btn-default dropdown-toggle d" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                     <span class="dropdown-text">游泳馆</span>
                      <span class="caret"></span>
-                   </button>
-                   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                      <li><a href="#">Action</a></li>
-                     <li><a href="#">Another action</a></li>
-                     <li><a href="#">Something else here</a></li>
-                     <li><a href="#">Separated link</a></li>
                    </ul>
                   </div>
-                  <input type="text" name="" class="form-control" placeholder="请输入二级分类"  style="margin: 15px 0">
+                  <input type="text" name="brandName" class="form-control" placeholder="请输入二级分类"  style="margin: 15px 0">
                   <!-- 上传图片 -->
-                  <input type="filed" class="form-control" name="file" value="上传图片" style="width:30%">
-                  <img src="./images/none.png" alt="" width="100" height="100" style="margin-top:15px">
+
+                  <div class="form-group fileupload">
+                    <!-- 隐藏域 -->
+                    <input type="hidden" name="brandLogo" id="brandLogo">
+                    <a href="javascript:;" class="btn btn-default">上传图片</a>
+                    <input type="file" class="form-control" name="pic1" id="files">
+                    <img id="preview" src="./images/none.png" alt="" width="100" height="100" style="margin-top:15px">
+                  </div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
@@ -162,6 +181,7 @@
     <script src="assets/artTemplate/template-native.js"></script>
     <!-- 引入图片上传插件 -->
     <script src="assets/jquery-fileupload/jquery.ui.widget.js"></script>
+    <script src="./assets/jquery-fileupload/jquery.iframe-transport.js"></script>
     <script src="assets/jquery-fileupload/jquery.fileupload.js"></script>
     <!-- 引入分页插件 -->
     <script src="./assets/bootstrap-paginator/bootstrap-paginator.min.js"></script>

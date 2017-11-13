@@ -23,9 +23,9 @@ $(function () {
             // 总页数=数据的总数/每页显示多少条数据
             totalPages: Math.ceil(data.total / data.size),
             /*点击页面事件*/
-            onPageClicked: function (event, originalEtype, page) {
+            onPageClicked: function (event, originalEtype,type, page) {
             /*改变当前页再渲染 page当前点击的按钮的页面*/
-              getCateFirstDatas(data)
+              getCateFirstDatas(page)
             }
         })
 
@@ -36,29 +36,27 @@ $(function () {
   getCateFirstDatas()
 
 
-  // // 表单验证
-  // $('#firstForm').bootstrapValidator({
-  //   feedbackIcons: {
-  //     valid: 'glyphicon glyphicon-ok',
-  //     invalid: 'glyphicon glyphicon-remove',
-  //     validating: 'glyphicon glyphicon-refresh'
-  //   },
-  //   fields: {
-  //     // 字段名是name属性的值
-  //     categoryName: {
-  //       validators: {
-  //         notEmpty: {
-  //           message: '不能为空哦！'
-  //         }
-  //       }
-  //     }
-
-  //   }
-  // }).on('success.form.bv', function (e) {
-  //     console.log(1)
-  //     e.preventDefault();
-  // })
-
+//  // 表单验证
+//   $('#firstForm').bootstrapValidator({
+//     feedbackIcons: {
+//       valid: 'glyphicon glyphicon-ok',
+//       invalid: 'glyphicon glyphicon-remove',
+//       validating: 'glyphicon glyphicon-refresh'
+//     },
+//     fields: {
+//       // 字段名是name属性的值
+//       categoryName: {
+//         validators: {
+//           notEmpty: {
+//             message: '不能为空哦！'
+//           }
+//         }
+//      }
+//     }
+//   }).on('success.form.bv', function (e) {
+//       console.log(1)
+//       e.preventDefault();
+//   })
   //新增功能
   $('#firstForm').on('click', '#save', function () {
     var categoryName = $('#firstForm').serialize()

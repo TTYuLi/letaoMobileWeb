@@ -1,0 +1,107 @@
+/* 轮播图  */
+#slider {
+  margin-top: 44px;
+}
+/*九宫格部分*/
+.brand {
+  padding: 10px;
+  width: 100%;
+}
+.brand ul {
+  width: 100%;
+  font-size: 0;
+}
+.brand ul li {
+  display: inline-block;
+  width: 33.333%;
+  /* vertical-align: middle; */
+}
+.brand img {
+  width: 100%;  
+}
+/* 广告部分 */
+.ad-bar {
+  padding: 0 10px;
+  width: 100%;
+  /* overflow: hidden; */
+}
+.ad-bar>ul>li {
+  float: left;
+}
+.ad-bar>ul {
+  vertical-align: middle;
+  overflow: hidden;
+}
+.ad-bar .ad-l {
+  width: 66.666%;
+}
+.ad-bar .ad-l ul {
+  width: 100%;
+  font-size:0;
+}
+.ad-l ul li {
+  width: 50%;
+  display: inline-block;
+  
+}
+.ad-bar .ad-r {
+  width: 33.333%;
+}
+.ad-bar img {
+  width: 100%;
+}
+/* 品牌专区 */
+.brand-logo {
+  width: 100%;
+  padding: 0 10px;
+}
+.brand-logo .top {
+  width: 100%;
+}
+.brand-logo img {
+  width: 100%;
+  /* height: auto; */
+}
+.brand-logo .bottom ul {
+  width: 100%;
+  font-size: 0;
+}
+.brand-logo .bottom ul li {
+  width: 25%;
+  display: inline-block;
+}
+/* 运动专区  */
+.exercise {
+  padding: 0 10px;
+  width: 100%;
+}
+.exercise .top-bar {
+  width: 100%;
+}
+.exercise .top-bar img {
+  width: 100%;
+}
+.exercise .products {
+  /* margin-top:10px; */
+  font-size: 0;
+}
+.exercise .product {
+  width:50%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.exercise .product:nth-child(2n-1) {
+  margin-right:3px;
+}
+.exercise .product:nth-child(2n) {
+  margin-left: 3px;
+}
+.exercise .product a {
+  /* display:  */
+}
+.exercise .product img {
+  width: 100%;
+}
+.exercise .product h1 {
+  font-weight: normal;
+}

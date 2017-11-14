@@ -1,0 +1,29 @@
+
+/* 顶部导航 */
+.lt_layout .mui-bar {
+  background-color: #006699;
+  
+}
+.lt_layout .mui-title {
+  color: #fff;
+}
+.lt_layout .search {
+  color: #fff;
+  line-height: 44px;
+  height: 44px;
+  font-size: 18px;
+  padding: 0 10px;
+}
+/* 底部菜单 */
+.mui-bar .mui-tab-item {
+  color: #fff;
+}
+.mui-bar .mui-active {
+  color: #ff8c00 !important;
+}
+ .mui-tab-item span:first-child {
+  display: block;
+}
+.mui-tab-item span:last-child {
+  font-size: 12px;
+}
